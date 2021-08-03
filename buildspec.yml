@@ -6,12 +6,11 @@ phases:
             - echo Install phase started...
     build:
         commands:
-            - echo Build started on 'date'
+            - echo Build started
             - echo Started pre_build phase...
             - ls -al
             - python --version
             - aws --version
-            - aws s3 cp --recursive s3://jeremy-burnham.com
     post_build:
         commands:
-            -echo Build completed on 'date'
+            - echo Build complete
